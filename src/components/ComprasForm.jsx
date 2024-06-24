@@ -17,10 +17,10 @@ const ComprasForm = ({ addTask }) => {
   };
 
   return (
-    <div className="formContainer">
+    <div className="">
       <form onSubmit={handleSubmit}>
         <input
-          className="inputForm"
+          className="w-9/12 mr-2 border-4 rounded-md mb-2 bg-slate-100"
           type="text"
           value={userInput}
           onChange={handleChange}
