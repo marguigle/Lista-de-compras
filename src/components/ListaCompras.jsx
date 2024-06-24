@@ -1,30 +1,27 @@
-import Producto from "./Producto.jsx";
+/* eslint-disable react/prop-types */
 
-import PropTypes from "prop-types";
+import Producto from "./Producto";
 
-const ListaCompras = ({ product, onCompleted, onDeleteProduct }) => {
-  if (product.length === 0) {
-    return null;
-  }
+const ListarCompras = ({
+  product,
 
+  onCompleted,
+  onDeleteProduct,
+  onValorChange,
+}) => {
   return (
-    <div className="containerList">
+    <div>
       {product.map((producto) => (
         <Producto
           key={producto.id}
           producto={producto}
           onCompleted={onCompleted}
           onDeleteProduct={onDeleteProduct}
+          onValorChange={onValorChange}
         />
       ))}
     </div>
   );
 };
 
-ListaCompras.propTypes = {
-  product: PropTypes.array.isRequired,
-  onCompleted: PropTypes.func.isRequired,
-  onDeleteProduct: PropTypes.func.isRequired,
-};
-
-export default ListaCompras;
+export default ListarCompras;
