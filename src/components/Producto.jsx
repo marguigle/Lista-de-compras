@@ -19,7 +19,7 @@ const Producto = ({
   const getStyle = () => {
     return {
       textDecoration: producto.completed ? "line-through" : "none",
-      fontSize: "1.5em",
+      fontSize: "1.4em",
       color: "green",
       display: "flex",
       alignItems: "center",
