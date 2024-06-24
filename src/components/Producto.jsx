@@ -41,7 +41,7 @@ const Producto = ({
         value={valor}
         onChange={handleChange}
         placeholder="precio"
-        className="w-1/5  text-center text-md col-span-3 ml-3  bg-yellow-100 rounded-md"
+        className="w-1/5  text-start text-md col-span-3 ml-3  bg-yellow-100 rounded-md"
       />
       <button onClick={() => onDeleteProduct(producto.id)}>
         <svg
