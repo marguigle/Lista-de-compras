@@ -65,7 +65,9 @@ function App() {
         onDeleteProduct={onDeleteProduct}
         onValorChange={handleValorChange}
       />
-      <p className="text-emerald-900 font-weight: 400 mt-3">Total: {total}</p>
+      <p className="text-emerald-800 font-medium mt-3 text-2xl">
+        Total: {total}
+      </p>
     </>
   );
 }
